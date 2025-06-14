@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberCore - Digital Security Solutions</title>
+    <meta name="description" content="Professional cybersecurity services and digital security solutions">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">{ NeoCo. }</a>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="typing-container">
+                    <h1 class="typing-text" id="typingText"></h1>
+                    <span class="cursor"></span>
+                </div>
+                <p class="hero-subtitle">Start Your <span style=" color: #00ff41;">Web Development</span> JourneyToday
+                </p>
+                <a href="#contact" class="cta-button">Initialize Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About NeoCo.</h2>
+            <p>We are a passionate team of web developers crafting modern, secure, and high-performance websites. Our
+                mission is to help businesses grow online with custom web solutions, responsive designs, and the latest
+                web technologies.</p>
+
+
+
+
+
+
+
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Our Vision</h3>
+                    <p>To empower businesses with powerful, user-friendly, and modern websites. We believe that every
+                        brand deserves a strong digital presence built with creativity and technology.</p>
+                </div>
+                <div class="card">
+
+                    <h3>Our Team</h3>
+                    <p>A group of skilled web designers, frontend & backend developers, and creative minds dedicated to
+                        building tailored web solutions that stand out.</p>
+                </div>
+                <div class="card">
+
+
+                    <h3>Our Approach</h3>
+                    <p>We follow a streamlined process combining clean design, efficient coding, and the latest web
+                        technologies to deliver websites that are fast, secure, and fully responsive.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>We provide practical web development guidance and resources to help individuals and businesses grow in
+                the digital world.</p>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Learn Web Development</h3>
+                    <p>We help beginners and non-tech individuals learn web development from scratch — covering
+                        everything from building simple websites to mastering modern frameworks.</p>
+                </div>
+                <div class="card">
+
+
+                    <h3>Build Your Online Presence</h3>
+                    <p>Want to take your idea or business online? We help you design and build personal portfolios,
+                        blogs, or full-fledged business websites that reflect your vision.</p>
+                </div>
+                <div class="card">
+                    <h3>Earn with Tech Skills</h3>
+                    <p>We guide you on how to use your web development skills to start freelancing, build projects, and
+                        turn your learning into real earning opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <!-- <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Initialize Contact</h2>
+            <p>Start Your Journey in Tech — Book Your <span style=" color: #00ff41;">Free Spot </span> Now!</p>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+                <button type="submit" class="submit-btn">Send Encrypted Message</button>
+            </form>
+
+        </div>
+    </section> -->
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Initialize Contact</h2>
+            <p>Start Your Journey in Tech — Book Your <span style=" color: #00ff41;">Free Spot </span> Now!</p>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="nameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    <div class="error-message" id="phoneError"></div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span class="btn-text">Send Encrypted Message</span>
+                    <span class="loading">⟳</span>
+                </button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                ✅ Your message has been sent successfully! We'll contact you soon.
+            </div>
+
+            <div class="error-message-global" id="errorMessageGlobal">
+                ❌ Something went wrong. Please try again.
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Web Core. All rights reserved. | Made With 💚 by NeoCo.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
