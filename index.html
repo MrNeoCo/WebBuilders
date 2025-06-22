@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <!-- ===== NAVIGATION ===== -->
     <nav>
         <div class="container nav-container">
@@ -25,7 +25,7 @@
     </nav>
 
     <!-- ===== HERO SECTION ===== -->
-    <section id="home" class="hero">
+    <!-- <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="typing-container">
@@ -37,7 +37,28 @@
                 <a href="#contact" class="cta-button">Initialize Contact</a>
             </div>
         </div>
+    </section> -->
+
+    <section id="home" class="hero">
+        <!-- Background Video -->
+        <video autoplay muted loop class="bg-video">
+            <source src="./dark1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="typing-container">
+                    <h1 class="typing-text" id="typingText"></h1>
+                    <span class="cursor"></span>
+                </div>
+                <p class="hero-subtitle">Start Your <span style=" color: #00ff41;">Web Development</span> Journey Today
+                </p>
+                <a href="#contact" class="cta-button">Initialize Contact</a>
+            </div>
+        </div>
     </section>
+
 
     <!-- ===== ABOUT SECTION ===== -->
     <section id="about" class="section about">
