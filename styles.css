@@ -148,7 +148,7 @@ nav {
 }
 
 /* ===== HERO SECTION ===== */
-.hero {
+/* .hero {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -158,7 +158,39 @@ nav {
         url('./hero.jpg') center/cover no-repeat;
     position: relative;
     overflow: hidden;
+} */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8));
 }
+
+/* Video as background */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(180deg);
+    z-index: -1;
+    opacity: 0.9;
+    /* Optional: control video visibility */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
 
 .hero::before {
     content: '';
